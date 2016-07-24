@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Hexo</title>
+  <title>Notes of ECC Related Sources | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="此帖为记录与分享贴，主要内容为关于信息编码，纠错的相关信息。持续更新中—-
+在任何涉及到信息通信的领域，信号的传递需要经历至少3个阶段： 发出，传输，以及接受。因为传输信道中噪声的存在，以及机器不可避免的存在误差，信息永远无法达到100% 的传输效率，需要通过从降低传输效率，增加纠错算法等方法实现优化。
+ECC (Error detection and correction)  可以用于实现在含噪">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/07/24/hello-world/index.html">
+<meta property="og:title" content="Notes of ECC Related Sources">
+<meta property="og:url" content="http://yoursite.com/2014/11/27/ECC/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-07-24T08:18:40.286Z">
+<meta property="og:description" content="此帖为记录与分享贴，主要内容为关于信息编码，纠错的相关信息。持续更新中—-
+在任何涉及到信息通信的领域，信号的传递需要经历至少3个阶段： 发出，传输，以及接受。因为传输信道中噪声的存在，以及机器不可避免的存在误差，信息永远无法达到100% 的传输效率，需要通过从降低传输效率，增加纠错算法等方法实现优化。
+ECC (Error detection and correction)  可以用于实现在含噪">
+<meta property="og:updated_time" content="2016-07-24T07:47:28.663Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="Notes of ECC Related Sources">
+<meta name="twitter:description" content="此帖为记录与分享贴，主要内容为关于信息编码，纠错的相关信息。持续更新中—-
+在任何涉及到信息通信的领域，信号的传递需要经历至少3个阶段： 发出，传输，以及接受。因为传输信道中噪声的存在，以及机器不可避免的存在误差，信息永远无法达到100% 的传输效率，需要通过从降低传输效率，增加纠错算法等方法实现优化。
+ECC (Error detection and correction)  可以用于实现在含噪">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -66,12 +69,16 @@ Quick">
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-ECC" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/07/24/hello-world/" class="article-date">
-  <time datetime="2016-07-24T08:18:40.282Z" itemprop="datePublished">2016-07-24</time>
+    <a href="/2014/11/27/ECC/" class="article-date">
+  <time datetime="2014-11-27T01:56:43.000Z" itemprop="datePublished">2014-11-27</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Storage/">Storage</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -80,7 +87,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Notes of ECC Related Sources
     </h1>
   
 
@@ -88,42 +95,39 @@ Quick">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+        <p>此帖为记录与分享贴，主要内容为关于信息编码，纠错的相关信息。持续更新中—-</p>
+<p>在任何涉及到信息通信的领域，信号的传递需要经历至少3个阶段： 发出，传输，以及接受。因为传输信道中噪声的存在，以及机器不可避免的存在误差，信息永远无法达到100% 的传输效率，需要通过从降低传输效率，增加纠错算法等方法实现优化。</p>
+<p><a href="http://en.wikipedia.org/wiki/Error_detection_and_correction" target="_blank" rel="external">ECC (Error detection and correction) </a> 可以用于实现在含噪声信道中进行稳定的数字信号传输。</p>
+<p>参考资料：</p>
+<h2 id="图书与论文-："><a href="#图书与论文-：" class="headerlink" title="图书与论文 ："></a>图书与论文 ：</h2><p>####<a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf" target="_blank" rel="external">Information Theory , Inference, and Learning Algorithms</a></p>
+<p>####<a href="https://www.ece.cmu.edu/research/publications/2010/CMU-ECE-2010-033.pdf" target="_blank" rel="external">Low-Density Parity-Check Codes for Data Storage and Memory Systems</a></p>
+<h2 id="大学课程："><a href="#大学课程：" class="headerlink" title="大学课程："></a>大学课程：</h2><p>####<a href="http://ocw.mit.edu/courses/mathematics/18-413-error-correcting-codes-laboratory-spring-2004/" target="_blank" rel="external">Error-Correcting Codes Laboratory</a></p>
+<p>####<a href="https://www.princeton.edu/~achaney/tmve/wiki100k/docs/Error_detection_and_correction.html" target="_blank" rel="external">Error detection and correction</a></p>
+<h2 id="其他资源："><a href="#其他资源：" class="headerlink" title="其他资源："></a>其他资源：</h2><p>####<a href="http://www.eccpage.com/" target="_blank" rel="external">The Error Correcting Codes (ECC) Page</a></p>
+<h4 id="LDPC-in-SSD-Making-Advanced-Error-Correction-Codes-Work-Effectively-in-Solid-State-Drives"><a href="#LDPC-in-SSD-Making-Advanced-Error-Correction-Codes-Work-Effectively-in-Solid-State-Drives" class="headerlink" title="LDPC-in-SSD:Making Advanced Error Correction Codes Work Effectively in Solid State Drives "></a><a href="https://www.usenix.org/sites/default/files/conference/protected-files/zhao_fast13_slides.pdf" target="_blank" rel="external">LDPC-in-SSD:Making Advanced Error Correction Codes Work Effectively in Solid State Drives </a></h4>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/24/hello-world/" data-id="cir0cg21j00002sa24nx47dws" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/11/27/ECC/" data-id="cir0d16nm0000m0a2h0wyrtl5" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Coding-theory/">Coding theory</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/storage/">storage</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2016/07/24/Python IDE/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2014/11/30/python-data-analysis/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          (no title)
+          python data analysis
         
       </div>
     </a>
   
-  
-    <a href="/2015/01/05/Improving Plan of 2015/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Improving Plan of 2015</div>
-    </a>
   
 </nav>
 
